@@ -1,0 +1,74 @@
+:root{
+  --darkcyan: hsl(158, 36%, 37%);
+  --cream: hsl(30, 38%, 92%);
+  --verydark-blue: hsl(212, 21%, 14%);
+  --darkgrayish-blue: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Montserrat, sans-serif;
+}
+
+body, p{
+  font-size: 14px;
+  font-weight: 500;
+}
+h1{
+  color: var(--verydark-blue);
+  font-family: Fraunces, serif;
+  font-weight: 700;
+}
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  background: var(--cream);
+  color: var(--darkgrayish-blue);
+}
+.card{
+  max-width: 90%;
+  background: var(--white);
+  border-radius: 20px;
+  overflow: hidden;
+}
+.card>*{
+  padding: 20px;
+}
+.card .banner{
+  background: url('images/image-product-mobile.jpg') center/cover no-repeat;
+  height: 200px;
+  padding: 0;
+}
+.title {
+  margin: 0 auto 20px;
+}
+.title p{
+  font-size: 11px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.price{
+  display: flex;
+  align-items: center;
+}
+.buy{
+  width: 100%;
+  background: var(--darkcyan);
+  color: var(--white);
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+.buy img{
+  width: 1em;
+  margin-right: 5px;
+}
